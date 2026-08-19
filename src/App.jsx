@@ -2,12 +2,16 @@ import { useState } from 'react'
 import Lecture01 from './lectures/Lecture01.jsx'
 import Lecture02 from './lectures/Lecture02.jsx'
 import Lecture03 from './lectures/Lecture03.jsx'
+import Lecture04 from './lectures/Lecture04.jsx'
+import Lab01 from './labs/Lab01.jsx'
 
 // Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
 const CONTENT = {
   l1: Lecture01,
   l2: Lecture02,
   l3: Lecture03,
+  l4: Lecture04,
+  lr1: Lab01,
 }
 
 const LECTURES = [
@@ -65,11 +69,18 @@ export default function App() {
 
         <div className="nav-group">
           <h4>Лабораторні</h4>
-          {LABS.map((l) => (
-            <button key={l.id} className="nav-item disabled">
-              <span className="num">ЛР{l.n}</span>{l.title}
-            </button>
-          ))}
+          {LABS.map((l) => {
+            const ready = !!CONTENT[l.id]
+            return (
+              <button
+                key={l.id}
+                className={`nav-item ${active === l.id ? 'active' : ''} ${ready ? '' : 'disabled'}`}
+                onClick={() => ready && setActive(l.id)}
+              >
+                <span className="num">ЛР{l.n}</span>{l.title}
+              </button>
+            )
+          })}
         </div>
       </aside>
 
