@@ -5,6 +5,7 @@ import Lecture03 from './lectures/Lecture03.jsx'
 import Lecture04 from './lectures/Lecture04.jsx'
 import Lecture05 from './lectures/Lecture05.jsx'
 import Lecture06 from './lectures/Lecture06.jsx'
+import Lecture07 from './lectures/Lecture07.jsx'
 import Lab01 from './labs/Lab01.jsx'
 import Lab02 from './labs/Lab02.jsx'
 import Lab03 from './labs/Lab03.jsx'
@@ -17,6 +18,7 @@ const CONTENT = {
   l4: Lecture04,
   l5: Lecture05,
   l6: Lecture06,
+  l7: Lecture07,
   lr1: Lab01,
   lr2: Lab02,
   lr3: Lab03,
