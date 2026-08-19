@@ -81,7 +81,7 @@ export default function Lecture07() {
         <tbody>
           <tr><td>Object</td><td>сутність/компонент</td><td>об’єкт «Meter007»</td></tr>
           <tr><td>Variable</td><td>значення з типом даних</td><td>«Energy», «Voltage.L1»</td></tr>
-          <tr><td>Method</td><td>виклична操作 операція</td><td>«ResetDemand()»</td></tr>
+          <tr><td>Method</td><td>виклична операція</td><td>«ResetDemand()»</td></tr>
           <tr><td>ObjectType / VariableType</td><td>типи (шаблони) для екземплярів</td><td>тип «MeterType»</td></tr>
           <tr><td>ReferenceType</td><td>вид зв’язку між вузлами</td><td>HasComponent, HasProperty</td></tr>
         </tbody>
