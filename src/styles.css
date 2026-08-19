@@ -125,6 +125,14 @@ table.data th { background: var(--panel-2); }
 .seg { display: inline-flex; gap: 4px; background: var(--panel-2); padding: 4px; border-radius: 10px; margin: 4px 0 12px; }
 .seg button { border: 0; background: none; color: var(--ink); padding: 6px 14px; border-radius: 7px; cursor: pointer; font-size: 13px; }
 .seg button.on { background: var(--brand); color: #fff; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
+.tab { border: 1px solid var(--line); background: var(--panel-2); color: var(--ink);
+  padding: 7px 12px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.tab:hover { border-color: var(--brand); }
+.tab.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+.verdict { border-radius: 10px; padding: 10px 14px; margin: 12px 0 0; font-size: 14px; }
+.verdict.ok { background: rgba(43,184,148,.16); border: 1px solid var(--brand); }
+.verdict.bad { background: rgba(192,57,43,.14); border: 1px solid var(--danger); }
 
 .frame { font-family: "SF Mono", "Cascadia Code", Consolas, monospace; background: var(--code-bg);
   color: var(--code-ink); border-radius: 10px; padding: 14px; margin: 10px 0; overflow-x: auto; }
