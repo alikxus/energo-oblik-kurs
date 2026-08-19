@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import Lecture01 from './lectures/Lecture01.jsx'
 import Lecture02 from './lectures/Lecture02.jsx'
+import Lecture03 from './lectures/Lecture03.jsx'
 
 // Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
 const CONTENT = {
   l1: Lecture01,
   l2: Lecture02,
+  l3: Lecture03,
 }
 
 const LECTURES = [
