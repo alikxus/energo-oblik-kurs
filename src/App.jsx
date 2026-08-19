@@ -1,8 +1,15 @@
 import { useState } from 'react'
 import Lecture01 from './lectures/Lecture01.jsx'
+import Lecture02 from './lectures/Lecture02.jsx'
+
+// Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
+const CONTENT = {
+  l1: Lecture01,
+  l2: Lecture02,
+}
 
 const LECTURES = [
-  { id: 'l1', n: 1, title: 'Архітектура ІС обліку. АСКОЕ/АІІС', ready: true },
+  { id: 'l1', n: 1, title: 'Архітектура ІС обліку. АСКОЕ/АІІС' },
   { id: 'l2', n: 2, title: 'Первинні прилади та перетворювачі' },
   { id: 'l3', n: 3, title: 'УСПД, канали та топології' },
   { id: 'l4', n: 4, title: 'Протокол Modbus RTU/TCP' },
@@ -28,6 +35,7 @@ const LABS = [
 
 export default function App() {
   const [active, setActive] = useState('l1')
+  const Active = CONTENT[active]
 
   return (
     <div className="app">
@@ -39,15 +47,18 @@ export default function App() {
 
         <div className="nav-group">
           <h4>Лекції</h4>
-          {LECTURES.map((l) => (
-            <button
-              key={l.id}
-              className={`nav-item ${active === l.id ? 'active' : ''} ${l.ready ? '' : 'disabled'}`}
-              onClick={() => l.ready && setActive(l.id)}
-            >
-              <span className="num">Л{l.n}</span>{l.title}
-            </button>
-          ))}
+          {LECTURES.map((l) => {
+            const ready = !!CONTENT[l.id]
+            return (
+              <button
+                key={l.id}
+                className={`nav-item ${active === l.id ? 'active' : ''} ${ready ? '' : 'disabled'}`}
+                onClick={() => ready && setActive(l.id)}
+              >
+                <span className="num">Л{l.n}</span>{l.title}
+              </button>
+            )
+          })}
         </div>
 
         <div className="nav-group">
@@ -61,7 +72,7 @@ export default function App() {
       </aside>
 
       <main className="content">
-        {active === 'l1' && <Lecture01 />}
+        {Active && <Active />}
       </main>
     </div>
   )
