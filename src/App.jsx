@@ -4,8 +4,10 @@ import Lecture02 from './lectures/Lecture02.jsx'
 import Lecture03 from './lectures/Lecture03.jsx'
 import Lecture04 from './lectures/Lecture04.jsx'
 import Lecture05 from './lectures/Lecture05.jsx'
+import Lecture06 from './lectures/Lecture06.jsx'
 import Lab01 from './labs/Lab01.jsx'
 import Lab02 from './labs/Lab02.jsx'
+import Lab03 from './labs/Lab03.jsx'
 
 // Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
 const CONTENT = {
@@ -14,8 +16,10 @@ const CONTENT = {
   l3: Lecture03,
   l4: Lecture04,
   l5: Lecture05,
+  l6: Lecture06,
   lr1: Lab01,
   lr2: Lab02,
+  lr3: Lab03,
 }
 
 const LECTURES = [
