@@ -78,7 +78,7 @@ export default function Lecture05() {
           <tr><th>Клас (IC)</th><th>№</th><th>Призначення</th><th>Ключові атрибути</th></tr>
         </thead>
         <tbody>
-          <tr><td>Data</td><td>1</td><td>прості统 статичні дані (серійний №, конфіг)</td><td>value</td></tr>
+          <tr><td>Data</td><td>1</td><td>прості статичні дані (серійний №, конфіг)</td><td>value</td></tr>
           <tr><td>Register</td><td>3</td><td>вимірювана величина зі шкалою</td><td>value, scaler_unit</td></tr>
           <tr><td>Extended Register</td><td>4</td><td>Register + мітка часу/статус</td><td>value, scaler_unit, capture_time</td></tr>
           <tr><td>Profile Generic</td><td>7</td><td>журнали/навантажувальні профілі (часові ряди)</td><td>buffer, capture_objects, capture_period</td></tr>
