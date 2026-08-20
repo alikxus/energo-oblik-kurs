@@ -6,9 +6,11 @@ import Lecture04 from './lectures/Lecture04.jsx'
 import Lecture05 from './lectures/Lecture05.jsx'
 import Lecture06 from './lectures/Lecture06.jsx'
 import Lecture07 from './lectures/Lecture07.jsx'
+import Lecture08 from './lectures/Lecture08.jsx'
 import Lab01 from './labs/Lab01.jsx'
 import Lab02 from './labs/Lab02.jsx'
 import Lab03 from './labs/Lab03.jsx'
+import Lab04 from './labs/Lab04.jsx'
 
 // Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
 const CONTENT = {
@@ -19,9 +21,11 @@ const CONTENT = {
   l5: Lecture05,
   l6: Lecture06,
   l7: Lecture07,
+  l8: Lecture08,
   lr1: Lab01,
   lr2: Lab02,
   lr3: Lab03,
+  lr4: Lab04,
 }
 
 const LECTURES = [
@@ -44,7 +48,7 @@ const LABS = [
   { id: 'lr1', n: 1, title: 'Опитування лічильника по Modbus' },
   { id: 'lr2', n: 2, title: 'Читання DLMS/COSEM (OBIS)' },
   { id: 'lr3', n: 3, title: 'Телеметрія через MQTT + Node-RED' },
-  { id: 'lr4', n: 4, title: 'InfluxDB + Grafana дашборд' },
+  { id: 'lr4', n: 4, title: 'Часовий ряд у SQLite + дашборд' },
   { id: 'lr5', n: 5, title: 'Прогнозування споживання' },
   { id: 'lr6', n: 6, title: 'Тарифікація + захищеність каналу' },
 ]
