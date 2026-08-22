@@ -9,11 +9,13 @@ import Lecture07 from './lectures/Lecture07.jsx'
 import Lecture08 from './lectures/Lecture08.jsx'
 import Lecture09 from './lectures/Lecture09.jsx'
 import Lecture10 from './lectures/Lecture10.jsx'
+import Lecture11 from './lectures/Lecture11.jsx'
 import Lab01 from './labs/Lab01.jsx'
 import Lab02 from './labs/Lab02.jsx'
 import Lab03 from './labs/Lab03.jsx'
 import Lab04 from './labs/Lab04.jsx'
 import Lab05 from './labs/Lab05.jsx'
+import Lab06 from './labs/Lab06.jsx'
 
 // Реєстр вмісту: id → компонент. Готовий пункт = є в CONTENT.
 const CONTENT = {
@@ -27,11 +29,13 @@ const CONTENT = {
   l8: Lecture08,
   l9: Lecture09,
   l10: Lecture10,
+  l11: Lecture11,
   lr1: Lab01,
   lr2: Lab02,
   lr3: Lab03,
   lr4: Lab04,
   lr5: Lab05,
+  lr6: Lab06,
 }
 
 const LECTURES = [
