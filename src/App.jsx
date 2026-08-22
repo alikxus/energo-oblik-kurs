@@ -75,8 +75,11 @@ export default function App() {
     <div className="app">
       <aside className="sidebar">
         <div className="brand">
-          Інформаційні системи обліку енергії
-          <small>174 · Автоматизація, комп’ютерно-інтегровані технології (КІТ), робототехніка&nbsp;&nbsp;|&nbsp;&nbsp;141 · Електроенергетика</small>
+          <span className="brand-title">Інформаційні системи обліку енергії</span>
+          <ul className="specs">
+            <li><span className="spec-code">174</span> Автоматизація, КІТ, робототехніка</li>
+            <li><span className="spec-code">141</span> Електроенергетика</li>
+          </ul>
         </div>
 
         <div className="nav-group">
